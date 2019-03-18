@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sidebar-menu</title>
+
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <div id="wrapper">
+        <div class="clear-fix">
+            <aside id= "js-sidebar" class="side-bar fl-left">
+                <ul class="main-menu js-main-menu">
+                    <li class="main-menu__item js-menu-item">
+                        <a href="#" class="main-menu__link">
+                            <i class="fa fa-fw fa-home"></i>
+                            <span class="nav-label">Trang chủ</span>
+                            <span class="item-icon-collapse">
+                                <i class="fas fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="sub-menu js-submenu">
+                            <li>
+                                <a href="#">Thời trang mùa hè</a>
+                            </li>
+                            <li>
+                                <a href="#">Thời trang mùa thu</a>
+                            </li>
+                            <li>
+                                <a href="#">Thời trang mùa đông</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-menu__item js-menu-item">
+                        <a href="#" class="main-menu__link">
+                            <i class="fas fa-basketball-ball"></i>
+                            <span class="nav-label">Về chúng tôi</span>
+                            <span class="item-icon-collapse">
+                                <i class="fas fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="sub-menu js-submenu">
+                            <li>
+                                <a href="#" class="main-menu__link">Thời trang nam</a>
+                            </li>
+                            <li>
+                                <a href="#" class="main-menu__link">Thời trang nữ</a>
+                            </li>
+                            <li>
+                                <a href="#" class="main-menu__link">Thời trang trẻ em</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-menu__item js-menu-item">
+                        <a href="#" class="main-menu__link">
+                            <i class="fas fa-book-open"></i>
+                            <span class="nav-label">Sản phẩm</span>
+                            <span class="item-icon-collapse ">
+                                <i class="fas fa-angle-left"></i>
+                            </span>
+                        </a>
+                        <ul class="sub-menu js-submenu">
+                            <li>
+                                <a href="#" class="main-menu__link">Thời trang nam</a>
+                            </li>
+                            <li>
+                                <a href="#" class="main-menu__link">Thời trang nữ</a>
+                            </li>
+                            <li>
+                                <a href="#" class="main-menu__link">Thời trang trẻ em</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-menu__item js-menu-item">
+                        <a href="#">
+                            <i class="fa fa-fw fa-user"></i>
+                            <span class="nav-label">Xu hướng</span>
+                            <span class="item-icon-collapse ">
+                                <i class="fas fa-angle-left"></i>
+                            </span>
+                        </a>
+                        <ul class="sub-menu js-submenu">
+                            <li>
+                                <a href="#">Thời trang mùa hè</a>
+                            </li>
+                            <li>
+                                <a href="#">Thời trang mùa thu</a>
+                            </li>
+                            <li>
+                                <a href="#">Thời trang mùa đông</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-menu__item js-menu-item">
+                        <a href="#">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="nav-label">Thanh toán</span>
+                            <span class="item-icon-collapse ">
+                                <i class="fas fa-angle-left "></i>
+                            </span>
+                        </a>
+                        <ul class="sub-menu js-submenu">
+                            <li>
+                                <a href="#">Thời trang mùa hè</a>
+                            </li>
+                            <li>
+                                <a href="#">Thời trang mùa thu</a>
+                            </li>
+                            <li>
+                                <a href="#">Thời trang mùa đông</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-menu__item js-menu-item">
+                        <a href="#">
+                            <i class="fas fa-envelope"></i>
+                            <span class="nav-label">Liên hệ</span>
+                            <span class="item-icon-collapse ">
+                                <i class="fas fa-angle-left"></i>
+                            </span>
+                        </a>
+                        <ul class="sub-menu js-submenu ">
+                            <li>
+                                <a href="#">Thời trang mùa hè</a>
+                            </li>
+                            <li>
+                                <a href="#">Thời trang mùa thu</a>
+                            </li>
+                            <li>
+                                <a href="#">Thời trang mùa đông</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+                <button id="toggleButton" class="js-btn-toggle"><i class="fas fa-2x fa-arrow-circle-left"></i></button>
+
+            </aside>
+
+            <div class="main-content" id="js-main-body">
+                <div class="content">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="http://i.kinja-img.com/gawker-media/image/upload/s--W1_x6XF1--/c_scale,fl_progressive,q_80,w_800/r3o8q7b1g93of0vizvvb.gif"
+                                alt="image" class="img-fulid">
+                        </div>
+
+                        <div class="col-6">
+                            <img src="https://media1.giphy.com/media/V9Y7jEhkhsrM4/giphy.gif" alt="image"
+                                class="img-fulid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="js-main-body" class="main-content">
+            <div class="content">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="http://i.kinja-img.com/gawker-media/image/upload/s--W1_x6XF1--/c_scale,fl_progressive,q_80,w_800/r3o8q7b1g93of0vizvvb.gif"
+                            alt="image" class="img-fulid">
+                    </div>
+
+                    <div class="col-6">
+                        <img src="https://media1.giphy.com/media/V9Y7jEhkhsrM4/giphy.gif" alt="image"
+                            class="img-fulid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/style.js"></script>
+</body>
+
+</html>
