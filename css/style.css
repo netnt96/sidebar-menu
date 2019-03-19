@@ -14,11 +14,12 @@ body {
     padding: 15px;
 }
 
+.col-6 {width: 50%;}
+
 .img-fulid {
     max-width: 100%;
     height: auto;
 }
-.col-6 {width: 50%;}
 
 a, a:hover, a:active, a:focus, button:focus, .btn:focus, .form-control:focus {
     outline: none !important;
@@ -31,6 +32,7 @@ a, a:hover, a:active, a:focus, button:focus, .btn:focus, .form-control:focus {
 .fl-right{
     float: right;
 }
+
 .side-bar {
     position: fixed;
     top: 0;
@@ -48,6 +50,7 @@ a, a:hover, a:active, a:focus, button:focus, .btn:focus, .form-control:focus {
     width: 220px;
     padding-left: 0.5rem;
 }
+
 .main-menu li a{
     font-size: 14px;
     padding: 15px 15px 10px 15px;
@@ -61,21 +64,8 @@ a, a:hover, a:active, a:focus, button:focus, .btn:focus, .form-control:focus {
     color: #fff;
 }
 
-
-.main-menu >li >a.show > .item-icon-collapse > i {
-    transform: rotate(-90deg);
-}
-
-.sidebar-collapse {
-    width: 66px;
-}
-
-.main-body-extend{
-    margin-left: 80px;
-}
-.sidebar-collapse #toggleButton {
-    transform: rotate(-180deg);
-    transition: all 0.5s;
+.main-menu .active .item-icon-collapse {
+    transform: rotate(90deg);
 }
 
 .main-menu > li.active {
@@ -86,8 +76,18 @@ a, a:hover, a:active, a:focus, button:focus, .btn:focus, .form-control:focus {
     background-color: #101113;
 }
 
+.sidebar-collapse {
+    width: 66px;
+}
+
+.main-body-extend{
+    margin-left: 80px;
+}
+
+
 .hide {
     visibility: hidden;
+    opacity: 0;
 }
 
 .sub-menu {
@@ -116,15 +116,7 @@ ul.sub-menu {
 }
 
 ul.sub-menu a {
-    padding-left: 50px;
-}
-
-.d-none {
-    display: none;
-}
-
-.d-block {
-    display: block;
+    padding-left: 40px;
 }
 
 .main-content {
@@ -149,6 +141,10 @@ ul.sub-menu a {
     transition: all 0.5s;
 }
 
+.sidebar-collapse #toggleButton {
+    transform: rotate(-180deg);
+    transition: all 0.5s;
+}
 
 @media only screen and (max-width: 425px) {
     .main-content {
@@ -169,4 +165,3 @@ ul.sub-menu a {
         position: fixed;
     }
 }
-/* ====================================================== */
